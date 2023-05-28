@@ -12,21 +12,21 @@ const MULTIPLIER_2 = 1;
 const MULTIPLIER_3 = -1;
 const MULTIPLIER_4 = -1;
 
-$x = $argv[1];
-$y = $argv[2];
+$x = 1;
+$y = 2;
 
 if(!is_numeric($x) || !is_numeric($y)){
 	die("\nCo-ordinates must be Integer\n");
 }
 
-$presentDirection = $argv[3];
+$presentDirection = "SOUTH";
 
 if($presentDirection != 'NORTH' && $presentDirection != 'EAST' && $presentDirection != 'SOUTH' && $presentDirection != 'WEST'){
 	 die("\nWrong Direction\n");
 }
 
 $presentDirectionNumber = constant($presentDirection);
-$path = $argv[4];
+$path = "RW2LW4R";
 
 for($i = 0; $i < strlen($path); $i++ ){
 
